@@ -33,17 +33,17 @@ const authStore = useAuthStore();
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
           <li class="nav-item">
-  <RouterLink to="/" class="link link-" style="font-size: 1.8em;" active-class="active-link">Inicio</RouterLink>
+  <RouterLink to="/" class="btn btn-primary" style="font-size: 1.4em;">Inicio</RouterLink>
 </li>
 
           &nbsp;&nbsp;
           <li class="nav-item">
-            <RouterLink to="/about" class="link link-success" style="font-size: 1.8em;"
+            <RouterLink to="/about" class="btn btn-primary" style="font-size: 1.4em;"
               >Catálogos</RouterLink>
             &nbsp;&nbsp;
           </li>
           <li class="nav-item">
-  <RouterLink v-if="authStore.token" to="/interpretes" class="link link-success" style="font-size: 1.8em;" exact-active-class="active-link">Productos</RouterLink>
+  <RouterLink v-if="authStore.token" to="/interpretes" class="btn btn-primary" style="font-size: 1.4em;">Productos</RouterLink>
 </li>
 
 
@@ -63,12 +63,6 @@ const authStore = useAuthStore();
   .smaller-image {
   width: 340px; /* Ajusta el ancho según tus necesidades */
   height: auto; /* Ajusta la altura proporcionalmente */
-}
-.active-link {
-  color: red;
-}
-.active-link {
-  color: red;
 }
 
 

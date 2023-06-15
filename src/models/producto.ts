@@ -3,4 +3,5 @@ export interface Interprete {
   Nombre: string;
   Precio: string;
   Descripcion: string;
+  foto_perfil: string;
 }
