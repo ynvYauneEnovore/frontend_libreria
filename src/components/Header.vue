@@ -5,10 +5,8 @@ import { useAuthStore } from "@/stores/index";
 const authStore = useAuthStore();
 </script>
 <template>
-  <nav
-    class="navbar navbar-expand-lg fixed-top"
-    :style="location.path != '/' ? 'background-color: black !important' : ''"
-  >
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgb(0, 48, 52);">
+
     <div class="container">
       <RouterLink to="/" class="navbar-brand">
         <img
@@ -35,38 +33,26 @@ const authStore = useAuthStore();
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
           <li class="nav-item">
-            <RouterLink to="/" class="nav-link click-scroll">Inicio</RouterLink>
-          </li>
+  <RouterLink to="/" class="link link-" style="font-size: 1.8em;" active-class="active-link">Inicio</RouterLink>
+</li>
 
+          &nbsp;&nbsp;
           <li class="nav-item">
-            <RouterLink to="/about" class="nav-link click-scroll"
-              >Acerca De</RouterLink
-            >
+            <RouterLink to="/about" class="link link-success" style="font-size: 1.8em;"
+              >Catálogos</RouterLink>
+            &nbsp;&nbsp;
           </li>
+          <li class="nav-item">
+  <RouterLink v-if="authStore.token" to="/interpretes" class="link link-success" style="font-size: 1.8em;" exact-active-class="active-link">Productos</RouterLink>
+</li>
 
-          <li class="nav-item">
-            <RouterLink v-if="authStore.token" to="/interpretes" class="nav-link click-scroll"
-              >Intérpretes</RouterLink
-            >
-          </li>
 
-          <li class="nav-item">
-            <a class="nav-link click-scroll" href="#section_4">Albumes</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link click-scroll" href="#section_5">Canciones</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link click-scroll" href="#section_6">Contacto</a>
-          </li>
+     
         </ul>
-
-        <RouterLink v-if="!authStore.token" to="/login" class="btn custom-btn d-lg-block d-none">
+        <RouterLink v-if="!authStore.token" to="/login" class="btn btn-primary">
           Iniciar Sesión
         </RouterLink>
-        <a v-else @click="authStore.logout()" class="btn custom-btn d-lg-block d-none">
+        <a v-else @click="authStore.logout()" class="btn btn-danger">
           Cerrar Sesión
         </a>
       </div>
@@ -78,5 +64,12 @@ const authStore = useAuthStore();
   width: 340px; /* Ajusta el ancho según tus necesidades */
   height: auto; /* Ajusta la altura proporcionalmente */
 }
+.active-link {
+  color: red;
+}
+.active-link {
+  color: red;
+}
+
 
 </style>

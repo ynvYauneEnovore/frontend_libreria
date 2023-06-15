@@ -2,7 +2,7 @@
 
 <template>
   <div class="container">
-    <RouterView ENDPOINT_API="interpretes"></RouterView>
+    <RouterView ENDPOINT_API="producto"></RouterView>
   </div>
 </template>
 

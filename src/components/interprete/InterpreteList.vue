@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import type { Interprete } from '@/models/interprete'
+import type { Interprete } from '@/models/producto'
 import { onMounted, ref } from 'vue'
 import http from '@/plugins/axios'
 import router from '@/router'
+import Header from "../Header.vue";
+
 
 const props = defineProps<{
   ENDPOINT_API: string
@@ -32,6 +34,7 @@ onMounted(() => {
 </script>
 
 <template>
+    <Header />
   <div class="container">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -53,18 +56,20 @@ onMounted(() => {
           <tr>
             <th scope="col">N°</th>
             <th scope="col">Nombre</th>
-            <th scope="col">Nacionalidad</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Descripción</th>
             <th scope="col">Acciones</th>
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(interprete, index) in interpretes.values()" :key="interprete.id">
+          <tr v-for="(interprete, index) in interpretes.values()" :key="interprete.id_producto">
             <th scope="row">{{ index + 1 }}</th>
-            <td>{{ interprete.nombre }}</td>
-            <td>{{ interprete.nacionalidad }}</td>
+            <td>{{ interprete.Nombre }}</td>
+            <td>{{ interprete.Precio }}</td>
+            <td>{{ interprete.Descripción }}</td>
             <td>
-              <button class="btn btn-link" @click="toEdit(interprete.id)">Editar</button>
-              <button class="btn btn-link" @click="toDelete(interprete.id)">Eliminar</button>
+              <button class="btn btn-link" @click="toEdit(interprete.id_producto)">Editar</button>
+              <button class="btn btn-link" @click="toDelete(interprete.id_producto)">Eliminar</button>
             </td>
           </tr>
         </tbody>
@@ -74,3 +79,4 @@ onMounted(() => {
 </template>
 
 <style scoped></style>
+

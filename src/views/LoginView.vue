@@ -13,74 +13,53 @@ function onSubmit() {
 </script>
 
 <template>
-  <div class="login-container">
-    <h2 class="text-center text-white">Iniciar Sesión</h2>
-    <form class="form" @submit.prevent="onSubmit">
-      <label class="form-label">Usuario:</label>
-      <input
-        v-model="usuario"
-        type="text"
-        class="form-input"
-        placeholder="Usuario"
-        autofocus
-      />
-      <label class="form-label">Contraseña:</label>
-      <input
-        v-model="clave"
-        type="password"
-        class="form-input"
-        placeholder="Contraseña"
-      />
-      <p v-if="error" class="text-danger">Usuario y/o contraseña incorrectos</p>
-      <input type="submit" class="form-submit" value="Ingresar" />
-    </form>
-    <br>
-  </div>
+      <div class="container sm:px-10">
+            <div class="block xl:grid grid-cols-2 gap-4">
+                <!-- BEGIN: Login Info -->
+                <div class="hidden xl:flex flex-col min-h-screen">
+                    <a href="" class="-intro-x flex items-center pt-5">
+                        <img alt="" class="" src="@/assets/images/cerebro_libro.png">
+                    </a>
+                    <div class="my-auto">
+                        <div class="-intro-x text-dark font-medium text-4xl leading-tight mt-10">
+                            Abrir un libro es abrir las puertas de la libertad: 
+                            <br>
+                            ¡descubre el poder de las palabras!
+                        </div>
+                        <div class="-intro-x mt-5 text-lg text-dark text-opacity-70 dark:text-slate-400">YovanEnovore &copy; 2023</div>
+                    </div>
+                </div>
+                <!-- END: Login Info -->
+                <!-- BEGIN: Login Form -->
+                <div class="h-screen xl:h-auto flex py-5 xl:py-0 my-10 xl:my-0">
+                    <form class="form" @submit.prevent="onSubmit">
+                    <div class="my-auto mx-auto xl:ml-20 bg-white dark:bg-darkmode-600 xl:bg-transparent px-5 sm:px-8 py-8 xl:p-0 rounded-md shadow-md xl:shadow-none w-full sm:w-3/4 lg:w-2/4 xl:w-auto">
+                        <h2 class="intro-x font-bold text-2xl xl:text-3xl text-center xl:text-left">
+                            Acceder
+                        </h2>
+                        <div class="intro-x mt-2 text-slate-400 xl:hidden text-center">A solo unos clics más para acceder a tu cuenta. Gestiona todas tus cuentas de la librería en un solo lugar.</div>
+                        <div class="intro-x mt-8">
+                            <input type="text" class="intro-x login__input form-control py-3 px-4 block" placeholder="Nombre de Usuario" v-model="usuario" autofocus>
+                            <input type="password" class="intro-x login__input form-control py-3 px-4 block mt-4" placeholder="Contraceña" v-model="clave">
+                        </div>
+                        <div class="intro-x flex text-slate-600 dark:text-slate-500 text-xs sm:text-sm mt-4">
+                            <a class="text-dark" href="">Olvidaste tu contraceña?</a> 
+                            <p v-if="error" class="text-danger">Usuario y/o contraseña incorrectos</p>
+                        </div>
+                        <div class="intro-x mt-5 xl:mt-8 text-center xl:text-left">
+                            <button class="btn btn-primary py-3 px-4 w-full xl:w-32 xl:mr-3 align-top">Ingresar</button>
+                        </div>
+
+                        <div class="intro-x mt-10 xl:mt-24 text-slate-600 dark:text-slate-500 text-center xl:text-left">Al registrarte, aceptas nuestros <a class="text-primary dark:text-slate-200" href="">Términos y condiciones</a> y nuestra <a class="text-primary dark:text-slate-200" href="">Política de privacidad</a></div>                    </div>
+                </form>
+                </div>
+                <!-- END: Login Form -->
+            </div>
+        </div>
 </template>
 
 
 
 <style>
-.form {
-  margin: 1.5rem auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 20%;
-  min-width: 350px;
-  max-width: 100%;
-  background: rgba(0, 113, 136, 0.9);
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0 4px 10px 4px #FF3131;
-}
-
-.form-label {
-  margin-top: 2rem;
-  color: white;
-  margin-bottom: 0.5rem;
-}
-
-.form-input {
-  padding: 10px 15px;
-  background: none;
-  background-image: none;
-  border: 1px solid white;
-  color: white;
-}
-
-.form-submit {
-  background: #FF3131;
-  border: none;
-  border-radius: 5rem;
-  color: white;
-  margin-top: 3rem;
-  padding: 1rem 0;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.login-container {
-  background-color: #106468; /* Color de fondo deseado */
-}
 
 </style>

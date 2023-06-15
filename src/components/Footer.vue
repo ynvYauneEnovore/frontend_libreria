@@ -1,69 +1,38 @@
 <template>
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <!-- Contenido del footer -->
+<footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
+                <img
+              src="@/assets/images/logo_libreria_librarte_dark_footer.png"
+              class="about-image img-fluid smaller-image"
+            />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">LIBRARTE</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 ">Nosotros</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">Politivas y Privacidad</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 ">Licencias</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Contactos</a>
+                </li>
+            </ul>
         </div>
-        <div class="col-lg-6">
-          <ul class="social-icon d-flex justify-content-lg-end">
-            <li class="social-icon-item">
-              <a href="#" class="social-icon-link">
-                <span class="bi-twitter"></span>
-              </a>
-            </li>
-            <li class="social-icon-item">
-              <a href="#" class="social-icon-link">
-                <span class="bi-github"></span>
-              </a>
-            </li>
-            <li class="social-icon-item">
-              <a href="#" class="social-icon-link">
-                <span class="bi-instagram"></span>
-              </a>
-            </li>
-            <li class="social-icon-item">
-              <a href="#" class="social-icon-link">
-                <span class="bi-youtube"></span>
-              </a>
-            </li>
-            <li class="social-icon-item">
-              <a href="#" class="social-icon-link">
-                <span class="bi-facebook"></span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">YovanEnovore™</a>. Todos los derechos reservados.</span>
     </div>
-  </footer>
+</footer>
 </template>
 
 <style>
-.footer {
-  background-color: #333333;
-  color: white;
-  padding: 20px 0;
-}
-
-.social-icon {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.social-icon-item {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.social-icon-link {
-  color: white;
-  font-size: 24px;
-}
-
-.social-icon-link:hover {
-  color: #ee5007;
+.footer{
+  background-color: aqua;
 }
 </style>
 

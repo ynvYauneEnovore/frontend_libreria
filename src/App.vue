@@ -4,20 +4,21 @@ import "@/assets/js/bootstrap.min.js";
 import "@/assets/js/jquery.sticky.js";
 import "@/assets/js/click-scroll.js";
 import "./assets/js/custom.js";
-import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
+import "@/assets/js/app.js";
+import "@/assets/js/ckeditor-balloon-block.js";
+//import Header from "./components/Header.vue";
+//import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-  <main style="margin-top: 110px;">
-    <Header />
+  <main>
     <RouterView />
   </main>
-  <Footer />
 </template>
 
 <style>
 @import "@/assets/css/bootstrap.min.css";
+@import "@/assets/css/app.css";
+@import "@/assets/css/_app.css";
 @import "@/assets/css/bootstrap-icons.css";
-@import "@/assets/css/templatemo-festava-live.css";
 </style>
