@@ -13,8 +13,8 @@ function onSubmit() {
 </script>
 
 <template>
-  <div class="my-1 pt-1 login-container">
-    <h1 class="text-center">Iniciar Sesión</h1>
+  <div class="login-container">
+    <h2 class="text-center text-white">Iniciar Sesión</h2>
     <form class="form" @submit.prevent="onSubmit">
       <label class="form-label">Usuario:</label>
       <input
@@ -24,7 +24,6 @@ function onSubmit() {
         placeholder="Usuario"
         autofocus
       />
-
       <label class="form-label">Contraseña:</label>
       <input
         v-model="clave"
@@ -39,6 +38,8 @@ function onSubmit() {
   </div>
 </template>
 
+
+
 <style>
 .form {
   margin: 1.5rem auto;
@@ -48,10 +49,10 @@ function onSubmit() {
   width: 20%;
   min-width: 350px;
   max-width: 100%;
-  background: rgba(19, 35, 47, 0.9);
+  background: rgba(0, 113, 136, 0.9);
   border-radius: 5px;
-  padding: 40px;
-  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  box-shadow: 0 4px 10px 4px #FF3131;
 }
 
 .form-label {
@@ -69,7 +70,7 @@ function onSubmit() {
 }
 
 .form-submit {
-  background: #ee5007;
+  background: #FF3131;
   border: none;
   border-radius: 5rem;
   color: white;
@@ -79,7 +80,7 @@ function onSubmit() {
   transition: background 0.2s;
 }
 .login-container {
-  background-color: #333333; /* Color de fondo deseado */
+  background-color: #106468; /* Color de fondo deseado */
 }
 
 </style>

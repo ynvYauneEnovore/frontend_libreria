@@ -10,8 +10,12 @@ const authStore = useAuthStore();
     :style="location.path != '/' ? 'background-color: black !important' : ''"
   >
     <div class="container">
-      <RouterLink to="/" class="navbar-brand"> LibArte </RouterLink>
-
+      <RouterLink to="/" class="navbar-brand">
+        <img
+              src="@/assets/images/logo_libreria_librarte.png"
+              class="about-image img-fluid smaller-image"
+            />
+      </RouterLink>
       <RouterLink v-if="!authStore.token" to="/login" class="btn custom-btn d-lg-none ms-auto me-4">
         Iniciar Sesión
       </RouterLink>
@@ -69,3 +73,10 @@ const authStore = useAuthStore();
     </div>
   </nav>
 </template>
+<style>
+  .smaller-image {
+  width: 340px; /* Ajusta el ancho según tus necesidades */
+  height: auto; /* Ajusta la altura proporcionalmente */
+}
+
+</style>
