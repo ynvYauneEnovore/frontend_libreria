@@ -43,8 +43,8 @@ import Header from "../components/Header.vue";
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="text-3xl font-medium leading-8 mt-6">3.721</div>
-                                    <div class="text-base text-slate-500 mt-1">New Orders</div>
+                                    <div class="text-3xl font-medium leading-8 mt-6">351</div>
+                                    <div class="text-base text-slate-500 mt-1">Nuevas Ordenes</div>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +60,7 @@ import Header from "../components/Header.vue";
                                         </div>
                                     </div>
                                     <div class="text-3xl font-medium leading-8 mt-6">2.149</div>
-                                    <div class="text-base text-slate-500 mt-1">Total Products</div>
+                                    <div class="text-base text-slate-500 mt-1">Total Vendidos</div>
                                 </div>
                             </div>
                         </div>
@@ -75,8 +75,8 @@ import Header from "../components/Header.vue";
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="text-3xl font-medium leading-8 mt-6">152.040</div>
-                                    <div class="text-base text-slate-500 mt-1">Unique Visitor</div>
+                                    <div class="text-3xl font-medium leading-8 mt-6">1456</div>
+                                    <div class="text-base text-slate-500 mt-1">TOTAL</div>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +99,7 @@ import Header from "../components/Header.vue";
                                         </div>
                                     </div>
                                     <div class="text-3xl font-medium leading-8 mt-6">4.710</div>
-                                    <div class="text-base text-slate-500 mt-1">Item Sales</div>
+                                    <div class="text-base text-slate-500 mt-1">Productos en Stock</div>
                                 </div>
                             </div>
                         </div>
@@ -115,7 +115,7 @@ import Header from "../components/Header.vue";
                                         </div>
                                     </div>
                                     <div class="text-3xl font-medium leading-8 mt-6">3.721</div>
-                                    <div class="text-base text-slate-500 mt-1">New Orders</div>
+                                    <div class="text-base text-slate-500 mt-1">Neuvas Ordenes</div>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +131,7 @@ import Header from "../components/Header.vue";
                                         </div>
                                     </div>
                                     <div class="text-3xl font-medium leading-8 mt-6">2.149</div>
-                                    <div class="text-base text-slate-500 mt-1">Total Products</div>
+                                    <div class="text-base text-slate-500 mt-1">Total Vendido</div>
                                 </div>
                             </div>
                         </div>
@@ -147,7 +147,7 @@ import Header from "../components/Header.vue";
                                         </div>
                                     </div>
                                     <div class="text-3xl font-medium leading-8 mt-6">152.040</div>
-                                    <div class="text-base text-slate-500 mt-1">Unique Visitor</div>
+                                    <div class="text-base text-slate-500 mt-1">TOTAL</div>
                                 </div>
                             </div>
                         </div>

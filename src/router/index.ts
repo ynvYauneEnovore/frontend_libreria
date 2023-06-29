@@ -14,15 +14,15 @@ const router = createRouter({
     },
     { path: "/login", name: "login", component: LoginView  },
     {
-      path: '/interpretes',
-      name: 'interpretes',
-      component: () => import('../views/InterpreteView.vue'),
+      path: '/catproducto',
+      name: 'catproducto',
+      component: () => import('../views/CatProductoView.vue'),
       children: [
-      { path: '', component: () => import('../components/interprete/InterpreteList.vue') },
-      { path: 'crear', component: () => import('../components/interprete/InterpreteCreate.vue') },
+      { path: '', component: () => import('../components/catproducto/CatProductoList.vue') },
+      { path: 'crear', component: () => import('../components/catproducto/CatProductoCreate.vue') },
       {
         path: 'editar/:id',
-        component: () => import('../components/interprete/InterpreteEdit.vue')
+        component: () => import('../components/catproducto/CatProductoEdit.vue')
       }
       ]
     },

@@ -22,9 +22,8 @@ function onSubmit() {
                     </a>
                     <div class="my-auto">
                         <div class="-intro-x text-dark font-medium text-4xl leading-tight mt-10">
-                            Abrir un libro es abrir las puertas de la libertad: 
+                            los mejores libros ! ! ! 
                             <br>
-                            ¡descubre el poder de las palabras!
                         </div>
                         <div class="-intro-x mt-5 text-lg text-dark text-opacity-70 dark:text-slate-400">YovanEnovore &copy; 2023</div>
                     </div>
@@ -47,10 +46,12 @@ function onSubmit() {
                             <p v-if="error" class="text-danger">Usuario y/o contraseña incorrectos</p>
                         </div>
                         <div class="intro-x mt-5 xl:mt-8 text-center xl:text-left">
-                            <button class="btn btn-primary py-3 px-4 w-full xl:w-32 xl:mr-3 align-top">Ingresar</button>
+                            <button class="btn btn-success py-3 px-4 w-full xl:w-32 xl:mr-3 align-top">Ingresar</button>
+
+                            <button class="btn btn-primary py-3 px-4 w-full xl:w-32 xl:mr-3 align-top">Registrarse</button>
                         </div>
 
-                        <div class="intro-x mt-10 xl:mt-24 text-slate-600 dark:text-slate-500 text-center xl:text-left">Al registrarte, aceptas nuestros <a class="text-primary dark:text-slate-200" href="">Términos y condiciones</a> y nuestra <a class="text-primary dark:text-slate-200" href="">Política de privacidad</a></div>                    </div>
+                        <div class="intro-x mt-10 xl:mt-24 text-slate-600 dark:text-sate-500 text-center xl:text-left">Al registrarte, aceptas nuestros <a class="text-primary dark:text-slate-200" href="">Términos y condiciones</a> y nuestra <a class="text-primary dark:text-slate-200" href="">Política de privacidad</a></div>                    </div>
                 </form>
                 </div>
                 <!-- END: Login Form -->

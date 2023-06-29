@@ -18,7 +18,7 @@ async function getCatProducto() {
 }
 
 function toEdit(id: number) {
-  router.push(`/interpretes/editar/${id}`)
+  router.push(`/catproducto/editar/${id}`)
 }
 
 async function toDelete(id: number) {
@@ -39,7 +39,7 @@ onMounted(() => {
     <h2 class="intro-y text-lg font-medium">Adminitración de Productos</h2>
     <div class="grid grid-cols-12 gap-6 mt-5">
         <div class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-2">
-          <RouterLink to="/interpretes/crear" class="btn btn-primary shadow-md mr-2">Crear Nuevo</RouterLink>
+          <RouterLink to="/catproducto/crear" class="btn btn-primary shadow-md mr-2">Crear Nuevo</RouterLink>
             <div class="hidden md:block mx-auto text-slate-500">
             </div>
             <div class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0">

@@ -1,3 +1,5 @@
+
+
 <script setup lang="ts">
 import type { CatProducto } from '@/models/catproducto'
 import { onMounted, ref } from 'vue'

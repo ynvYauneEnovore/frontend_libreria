@@ -39,10 +39,14 @@ const authStore = useAuthStore();
           &nbsp;&nbsp;
           <li class="nav-item">
             <RouterLink to="/about" class="btn btn-primary" style="font-size: 1.4em;"
-              >Catálogos</RouterLink>
+              >Ventas</RouterLink>
             &nbsp;&nbsp;
           </li>
           <li class="nav-item">
+  <RouterLink v-if="authStore.token" to="/catproducto" class="btn btn-primary" style="font-size: 1.4em;">Categoría</RouterLink>
+</li>
+&nbsp;&nbsp;
+<li class="nav-item">
   <RouterLink v-if="authStore.token" to="/interpretes" class="btn btn-primary" style="font-size: 1.4em;">Productos</RouterLink>
 </li>
 
