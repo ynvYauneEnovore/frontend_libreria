@@ -33,12 +33,12 @@ const authStore = useAuthStore();
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
           <li class="nav-item">
-  <RouterLink to="/" class="btn btn-primary" style="font-size: 1.4em;">Inicio</RouterLink>
+  <RouterLink to="/" class="btn btn-success" style="font-size: 1.4em;">Inicio</RouterLink>
 </li>
 
           &nbsp;&nbsp;
           <li class="nav-item">
-            <RouterLink to="/about" class="btn btn-primary" style="font-size: 1.4em;"
+            <RouterLink to="/venta" class="btn btn-success" style="font-size: 1.4em;"
               >Ventas</RouterLink>
             &nbsp;&nbsp;
           </li>
@@ -47,13 +47,13 @@ const authStore = useAuthStore();
 </li>
 &nbsp;&nbsp;
 <li class="nav-item">
-  <RouterLink v-if="authStore.token" to="/interpretes" class="btn btn-primary" style="font-size: 1.4em;">Productos</RouterLink>
+  <RouterLink v-if="authStore.token" to="/producto" class="btn btn-success" style="font-size: 1.4em;">Productos</RouterLink>
 </li>
 
 
      
         </ul>
-        <RouterLink v-if="!authStore.token" to="/login" class="btn btn-primary">
+        <RouterLink v-if="!authStore.token" to="/login" class="btn btn-success">
           Iniciar Sesión
         </RouterLink>
         <a v-else @click="authStore.logout()" class="btn btn-danger">

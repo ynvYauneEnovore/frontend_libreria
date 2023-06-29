@@ -26,6 +26,36 @@ const router = createRouter({
       }
       ]
     },
+    
+    {
+      path: '/producto',
+      name: 'producto',
+      component: () => import('../views/ProductoView.vue'),
+      children: [
+      { path: '', component: () => import('../components/producto/ProductoList.vue') },
+      { path: 'crear', component: () => import('../components/producto/ProductoCreate.vue') },
+      {
+        path: 'editar/:id',
+        component: () => import('../components/producto/ProductoEdit.vue')
+      }
+      ]
+    },
+
+    {
+      path: '/venta',
+      name: 'venta',
+      component: () => import('../views/ProductoVentaView.vue'),
+      children: [
+      { path: '', component: () => import('../components/ventas/VentaList.vue') },
+      { path: 'crear', component: () => import('../components/producto/ProductoCreate.vue') },
+      {
+        path: 'editar/:id',
+        component: () => import('../components/producto/ProductoEdit.vue')
+      }
+      ]
+    },
+
+
     {
       path: '/about',
       name: 'about',

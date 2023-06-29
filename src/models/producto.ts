@@ -3,7 +3,6 @@ import { VentaDetalle } from './ventadetalle';
 
 export interface Producto {
   id: number;
-  idCatProducto: number;
   nombre: string;
   precio: number;
   descripcion: string;
@@ -14,6 +13,6 @@ export interface Producto {
   stock: string;
   fechaCreacion: Date;
   fechaModificacion: Date;
-  catproducto: CatProducto;
+  catproducto: string;
   ventadetalle: VentaDetalle[];
 }
